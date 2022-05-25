@@ -5,9 +5,9 @@ import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:http/http.dart' as http;
 import 'package:gredu_unleash/extention.dart';
 import 'package:gredu_unleash/gredu_unleash_config.dart';
+import 'package:http/io_client.dart';
 
 import 'feature_flags_entity.dart';
 
@@ -52,7 +52,9 @@ class GreduUnleash {
   Future<void> _getUnleashClient() async {
     if (_config != null) {
       debug("fetching data...");
-      final client = http.Client();
+      final httpClient = HttpClient();
+      httpClient.badCertificateCallback = ((X509Certificate cert, String host, int port) => true);
+      final client = IOClient(httpClient);
       try {
         final response = await client.get(Uri.parse(_config!.proxyUrl), headers: _config!.headers);
         if (response.statusCode != 200) throw HttpException('${response.statusCode}');

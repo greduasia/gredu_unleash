@@ -31,7 +31,6 @@ Check is a feature enabled :
     } else {
       // Disable feature
     }
-}
 ```
 
 More Information : [https://docs.getunleash.io/](https://docs.getunleash.io/)

@@ -9,7 +9,7 @@ featureFlagsEntityFromJson(FeatureFlagsEntity data, Map<String, dynamic> json) {
 
 Map<String, dynamic> featureFlagsEntityToJson(FeatureFlagsEntity entity) {
 	final Map<String, dynamic> data = new Map<String, dynamic>();
-	data['toggles'] =  entity.toggles?.map((v) => v.toJson())?.toList();
+	data['toggles'] =  entity.toggles?.map((v) => v.toJson()).toList();
 	return data;
 }
 

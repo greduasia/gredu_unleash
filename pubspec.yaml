@@ -1,5 +1,5 @@
 name: gredu_unleash
-description: A simple tools for feature toggle
+description: A simple tools for feature toggle. This is a simple helper for using Unleash Feature Flag
 version: 0.0.1
 homepage: https://github.com/greduasia/gredu_unleash
 repository: https://github.com/greduasia/gredu_unleash
@@ -11,6 +11,7 @@ environment:
 
 dependencies:
   http: ^0.13.4
+  lints: ^1.0.1
   flutter:
     sdk: flutter
 

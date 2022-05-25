@@ -1,6 +1,6 @@
 name: gredu_unleash
 description: A simple tools for feature toggle. This is a simple helper for using Unleash Feature Flag
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/greduasia/gredu_unleash
 repository: https://github.com/greduasia/gredu_unleash
 issue_tracker: https://github.com/greduasia/gredu_unleash/issues
